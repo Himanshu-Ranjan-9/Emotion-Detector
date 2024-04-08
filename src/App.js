@@ -89,30 +89,33 @@ const App = () => {
             <div className="service-container">
               <div className="service-item">
                 <input
+                  id="Object-Detection"
                   onChange={() => onServiceTypeChange("ObjectDetection")}
                   checked={files.service_type === "ObjectDetection"}
                   type="radio"
                   name="service"
                 />
-                <label>Object Detection</label>
+                <label htmlFor="Object-Detection">Object Detection</label>
               </div>
               <div className="service-item">
                 <input
+                id="Face-Detection"
                   onChange={() => onServiceTypeChange("FaceDetection")}
                   checked={files.service_type === "FaceDetection"}
                   type="radio"
                   name="service"
                 />
-                <label>Face Detection</label>
+                <label htmlFor="Face-Detection">Face Detection</label>
               </div>
               <div className="service-item">
                 <input
+                  id="Celebrity-Detection"
                   onChange={() => onServiceTypeChange("CelebrityDetection")}
                   checked={files.service_type === "CelebrityDetection"}
                   type="radio"
                   name="service"
                 />
-                <label>Celebrity Detection</label>
+                <label htmlFor="Celebrity-Detection">Celebrity Detection</label>
               </div>
             </div>
 
